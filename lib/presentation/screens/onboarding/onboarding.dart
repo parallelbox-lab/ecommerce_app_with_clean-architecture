@@ -31,8 +31,15 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
        child:Column(
         children: [
           Expanded(child:
-             PageView.builder(itemBuilder: (context, index){
-              return Column(children: [],);
+             PageView.builder(
+              itemCount:_onboardingData.length ,
+              itemBuilder: (context, i){
+              return Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(children: [
+                  Image.asset(_onboardingData[i]["image"]!)
+                ],),
+              );
              })         
           )
        ])  

@@ -1,17 +1,45 @@
 import 'package:flutter/material.dart';
 
-class OnBoardingScreen  extends StatefulWidget {
-  const OnBoardingScreen ({ Key? key }) : super(key: key);
+class OnBoardingScreen extends StatefulWidget {
+  const OnBoardingScreen({Key? key}) : super(key: key);
 
   @override
   State<OnBoardingScreen> createState() => _OnBoardingScreenState();
 }
 
-class _OnBoardingScreenState extends State<OnBoardingScreen > {
+class _OnBoardingScreenState extends State<OnBoardingScreen> {
+  final _controller = PageController();
+  int _currentPage = 0;
+  final List<Map<String, String>> _onboardingData = [{
+    "image":"assets/goldclothings-20181113-0002.jpg",
+    "text":"We provide high quality products just for you"
+  },
+  {
+   "image":"assets/goldclothings-20181113-0002.jpg",
+    "text":"We provide high quality products just for you"
+  },
+   {
+   "image":"assets/goldclothings-20181113-0002.jpg",
+    "text":"We provide high quality products just for you"
+  },
+  
+  ];
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      body: SafeArea(
+       child:Column(
+        children: [
+          Expanded(child: Column(
+            children:[
+             PageView.builder(itemBuilder: (context, index){
+              return Column(children: [],);
+             })
+            ]
+          )
+        ],
+       )  
+      ),
     );
   }
 }

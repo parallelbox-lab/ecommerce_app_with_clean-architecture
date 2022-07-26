@@ -30,15 +30,12 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       body: SafeArea(
        child:Column(
         children: [
-          Expanded(child: Column(
-            children:[
+          Expanded(child:
              PageView.builder(itemBuilder: (context, index){
               return Column(children: [],);
-             })
-            ]
+             })         
           )
-        ],
-       )  
+       ])  
       ),
     );
   }

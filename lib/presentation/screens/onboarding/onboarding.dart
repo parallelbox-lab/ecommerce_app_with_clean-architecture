@@ -34,11 +34,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
              PageView.builder(
               itemCount:_onboardingData.length ,
               itemBuilder: (context, i){
-              return Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Column(children: [
+              return  Column(children: [
                   Image.asset(_onboardingData[i]["image"]!)
-                ],),
+                ]
               );
              })         
           )

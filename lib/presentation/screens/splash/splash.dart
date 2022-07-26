@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:ecommerce_app_with_clean_architecture/presentation/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -13,6 +14,8 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   int? isViewed;
   void _navigationPage() async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (ctx) =>const OnBoardingScreen()));
     // SharedPreferences prefs = await SharedPreferences.getInstance();
     // isViewed = prefs.getInt('onBoard');
     // if (isViewed == null || isViewed == 0) {
@@ -43,7 +46,7 @@ class _SplashState extends State<Splash> {
       body: Center(
         child: SizedBox(
           // height: 30.h,
-          child: Image.asset('assets/icons/logo.png',width:250),
+          child: Image.asset('assets/icons/logo.png', width: 250),
         ),
       ),
     );

@@ -21,7 +21,7 @@ class _SplashState extends State<Splash> {
     //   final bool? isLoggedIn = prefs.getBool('loginStatus');
     //   final userToken = prefs.getString("access_token_key");
     //   final userId = prefs.getInt("userId");
-    //   isLoggedIn == null || userToken == null || userId == null 
+    //   isLoggedIn == null || userToken == null || userId == null
     //       ? Navigator.pushReplacementNamed(context, SignUp.routeName)
     //       : Navigator.pushReplacementNamed(context, BottomNavigation.routeName);
     // }
@@ -31,7 +31,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Timer(
-      // const Duration(seconds: 3),
+      const Duration(seconds: 3),
       () => _navigationPage(),
     );
   }
@@ -43,7 +43,7 @@ class _SplashState extends State<Splash> {
       body: Center(
         child: SizedBox(
           // height: 30.h,
-          child: Image.asset('assets/logo/logo.png'),
+          child: Image.asset('assets/icons/logo.png'),
         ),
       ),
     );

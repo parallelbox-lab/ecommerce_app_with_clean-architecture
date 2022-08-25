@@ -34,7 +34,8 @@ dependencies:
   flutter_bloc: ^8.0.1  # Value equality
   equatable: ^2.0.3
   # Functional programming thingies
-  dartz: ^0.10.1  # Remote API
+  dartz: ^0.10.1 
+   # Remote API
   data_connection_checker: ^0.3.4
   # Http calls
   http: ^0.13.4  

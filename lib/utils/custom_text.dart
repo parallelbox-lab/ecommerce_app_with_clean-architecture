@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:google_fonts/google_fonts.dart";
+// import "package:google_fonts/google_fonts.dart";
 import 'package:sizer/sizer.dart';
 
 class CustomText extends StatelessWidget {
@@ -21,11 +21,11 @@ class CustomText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text ?? '',
-        style: GoogleFonts.montserrat(
-            textStyle: TextStyle(
+        style:TextStyle(
                 letterSpacing: letterspacing,
                 fontSize: size ?? 14.sp,
                 color: color,
-                fontWeight: weight ?? FontWeight.normal)),textAlign:textAlign ?? TextAlign.left ,);
+                fontWeight: weight ?? FontWeight.normal),
+                textAlign:textAlign ?? TextAlign.left ,);
   }
 }
